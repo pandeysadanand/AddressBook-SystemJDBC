@@ -39,8 +39,12 @@ public class AddressBookMain {
                     break;
                 case 2:
                     addressBook.addContact(con);
+                    break;
                 case 3:
                     addressBook.editContact(con);
+                    break;
+                case 4:
+                    addressBook.deleteContact(con);
                     default:
                     change = false;
                     System.out.println("Exiting Address Book... ");

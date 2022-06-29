@@ -32,14 +32,16 @@ public class AddressBookMain {
         do {
             System.out.println("\n Select the operation you want to perform : ");
             System.out.println(
-                    "1.Create table\n2.Add contact\n3.Exit Address book System");
+                    "1.Create table\n2.Add contact\n3.Edit contact\n4.Exit Address book System");
             switch (scanner.nextInt()) {
                 case 1:
                     addressBook.createTable(con);
                     break;
                 case 2:
                     addressBook.addContact(con);
-                default:
+                case 3:
+                    addressBook.editContact(con);
+                    default:
                     change = false;
                     System.out.println("Exiting Address Book... ");
             }
